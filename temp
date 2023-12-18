@@ -1,0 +1,31 @@
+ <section id="works bg-[#EDF7FA]">
+      <div class="container mx-auto">
+        <div class="w-full flex justify-between my-4 items-center">
+          <h4 class="text-[#21243D] text-2xl">Featured Works</h4>
+          <button
+            class="hover:text-[blue] transition-all duration-200 ease-in cursor-pointer">
+            View All
+          </button>
+        </div>
+        <div class="flex flex-row gap-6">
+          <div class="w-52 border border-black"></div>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl font-bold">Project 1</h3>
+            <p class="flex gap-6">
+              <span
+                class="rounded-[16px] bg-[#142850] flex items-center justify-center font-bold text-white w-fit px-3">
+                New
+              </span>
+              <span class="text-[#8695A4] text-xl">Note</span>
+            </p>
+
+            <p class="text-[#21243D]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eos
+              nostrum impedit eligendi tempore consequuntur repudiandae natus!
+              Amet corporis doloribus hic eos autem ipsa inventore fugit, culpa,
+              aspernatur reprehenderit asperiores!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
