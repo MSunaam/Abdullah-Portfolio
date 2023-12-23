@@ -24,9 +24,18 @@
       section {
         margin-top: 5rem;
       }
+      ol li {
+        transition: all 0.5s ease-in-out;
+      }
+      #journal-list li {
+        margin-bottom: 1rem;
+      }
+      #conference-list li {
+        margin-bottom: 1rem;
+      }
     </style>
   </head>
-  <body>
+  <body class="">
     <!-- <div id="floatingButton">
       <button
         onclick="window.scrollTo(0,0)"
@@ -37,30 +46,34 @@
     <nav class="h-20 bg-white flex items-center justify-end container mx-auto">
       <ul class="flex gap-4 font-medium items-center">
         <li
-          class="hover:text-[blue] transition-all duration-200 rounded-xl ease-in cursor-pointer hover:border-b-2 hover:border-[blue] content-box p-2 border-2 border-transparent">
+          class="hover:text-[blue] transition-all duration-200 rounded-xl ease-in cursor-pointer hover:border-b-2 hover:border-[blue] content-box p-2 border-2 border-transparent"
+        >
           <a href="#education">Education</a>
         </li>
         <li
-          class="hover:text-[blue] transition-all duration-200 rounded-xl ease-in cursor-pointer hover:border-b-2 hover:border-[blue] content-box p-2 border-2 border-transparent">
+          class="hover:text-[blue] transition-all duration-200 rounded-xl ease-in cursor-pointer hover:border-b-2 hover:border-[blue] content-box p-2 border-2 border-transparent"
+        >
           <a href="#projects">Reasearch</a>
         </li>
         <li
-          class="hover:text-[blue] transition-all duration-200 rounded-xl ease-in cursor-pointer hover:border-b-2 hover:border-[blue] content-box p-2 border-2 border-transparent">
+          class="hover:text-[blue] transition-all duration-200 rounded-xl ease-in cursor-pointer hover:border-b-2 hover:border-[blue] content-box p-2 border-2 border-transparent"
+        >
           <a href="#contact">Contact</a>
         </li>
         <li>
           <button
             class="bg-[#FF6464] text-white rounded-[2px] w-fit px-4 py-1 border-2 border-transparent hover:border-[#FF6464] hover:text-[#FF6464] hover:bg-white transition-all duration-200 ease-in"
-            onclick="alert('paise tou dedo bhayia please')">
-            Resume
+            onclick="alert('paise tou dedo bhayia please')"
+          >
+            <span class="">Resume</span>
           </button>
         </li>
       </ul>
     </nav>
     <section id="hero">
       <div class="container mx-auto">
-        <div class="flex flex-row items-center gap-10">
-          <div class="flex flex-col gap-4">
+        <div class="flex flex-row items-center justify-between">
+          <div class="flex flex-col gap-4 w-[50%]">
             <h1 class="text-3xl font-bold">
               Hi! I am Abdullah Madni, PHD Scholar from LUMS
             </h1>
@@ -70,85 +83,246 @@
               nemo sequi dolore saepe! Minus omnis corporis unde quos! Harum
               consequatur reprehenderit reiciendis id!
             </h4>
+            <button
+              class="bg-[#FF6464] text-white rounded-[2px] w-fit px-4 py-1 border-2 border-transparent hover:border-[#FF6464] hover:text-[#FF6464] hover:bg-white transition-all duration-200 ease-in font-medium"
+              onclick="alert('paise tou dedo bhayia please')"
+            >
+              Resume
+            </button>
           </div>
           <div
-            class="relative flex items-center justify-center border-2 border-black bg-gradient-to-r from-[#8e2de2] to-[#4a00e0] rounded-full">
+            class="relative flex items-center justify-center border-2 border-black bg-gradient-to-r from-[#8e2de2] to-[#4a00e0] rounded-full"
+          >
             <div class="rounded-[100%] overflow-hidden">
-              <img src="me.jpeg" alt="me" class="object-cover w-[500px]" />
+              <img src="me.jpeg" alt="me" class="object-cover w-[250px]" />
             </div>
           </div>
         </div>
       </div>
     </section>
     <section id="education">
-      <div class="container mx-auto">
-        <ol class="relative border-s border-gray-200 dark:border-gray-700">
-          <li class="mb-10 ms-4">
+      <h1 class="text-center text-4xl font-bold my-10">Education</h1>
+      <div class="container mx-auto flex items-center justify-center">
+        <ol class="relative border-s border-[#142850] dark:border-gray-700">
+          <li class="mb-10 ms-4 education-item h-[calc(100%)]">
             <div
-              class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              class="absolute w-3 h-3 bg-[#142850] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+            ></div>
             <time
-              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >February 2022</time
+              class="mb-1 text-sm font-normal leading-none dark:text-gray-500 text-italic text-sm"
+              >2019 - Present</time
             >
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Application UI code in Tailwind CSS
+              Ph.d. Radiofrquency and Microwave Engineering
             </h3>
             <p
-              class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              Get access to over 20+ pages including a dashboard layout, charts,
-              kanban board, calendar, and pre-order E-commerce & Marketing
-              pages.
+              class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+            >
+              Lahore University of Management Sciences (LUMS), Lahore, Pakistan
             </p>
             <a
-              href="#"
-              class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-              >Learn more
+              href="https://www.researchgate.net/profile/Abdullah-Madni"
+              target="_blank"
+              class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-[#142850] rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-[#142850] focus:text-blue-700 dark:bg-gray-800 dark: dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              >Research Gate
               <svg
                 class="w-3 h-3 ms-2 rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewBox="0 0 14 10">
+                viewBox="0 0 14 10"
+              >
                 <path
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9" /></svg
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                /></svg
             ></a>
           </li>
-          <li class="mb-10 ms-4">
+          <li class="mb-10 ms-4 education-item h-[calc(100%)]">
             <div
-              class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              class="absolute w-3 h-3 bg-[#142850] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+            ></div>
             <time
-              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >March 2022</time
-            >
+              class="mb-1 text-sm font-normal leading-none dark:text-gray-500"
+              >2016 - 2018
+            </time>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Marketing UI design in Figma
+              M.S
             </h3>
             <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              All of the pages and components are first designed in Figma and we
-              keep a parity between the two versions even as we update the
-              project.
+              Information Technology University of the Punjab (ITU), Lahore,
+              Pakistan
             </p>
           </li>
-          <li class="ms-4">
+          <li class="ms-4 mb-10 education-item h-[calc(100%)]">
             <div
-              class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              class="absolute w-3 h-3 bg-[#142850] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+            ></div>
             <time
-              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >April 2022</time
+              class="mb-1 text-sm font-normal leading-none dark:text-gray-500"
+              >2011 - 2015</time
             >
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              E-Commerce UI code in Tailwind CSS
+              B.S
             </h3>
             <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Get started with dozens of web components and interactive elements
-              built on top of Tailwind CSS.
+              Ghulam Ishaq Khan Institute of Engineering Sciences & Technology
+              (GIKI), KPK, Pakistan
+            </p>
+          </li>
+          <li class="ms-4 mb-10 education-item h-[calc(100%)]">
+            <div
+              class="absolute w-3 h-3 bg-[#142850] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+            ></div>
+            <time
+              class="mb-1 text-sm font-normal leading-none dark:text-gray-500"
+              >2009 - 2011</time
+            >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              F.Sc
+            </h3>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Government College University (GCU), Lahore
+            </p>
+          </li>
+          <li class="ms-4 mb-10 education-item h-[calc(100%)]">
+            <div
+              class="absolute w-3 h-3 bg-[#142850] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+            ></div>
+            <time
+              class="mb-1 text-sm font-normal leading-none dark:text-gray-500"
+              >2007 - 2009</time
+            >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Matric
+            </h3>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+              Lahore Grammar School, Lahore
             </p>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center my-10">
+          Research Publications
+        </h1>
+        <div
+          class="flex items-start justify-center w-full h-full gap-4 divide-x-2"
+        >
+          <div class="flex flex-col items-center justify-center w-full">
+            <h2 class="text-2xl font-bold text-center my-4">
+              Journal Publications
+            </h2>
+            <ol style="list-style-type: disc" id="journal-list">
+              <li>
+                <h4 class="text-lg">
+                  Design of a Compact 4-Element GNSS Antenna Array with High
+                  Isolation using a Defected Ground Structure (DGS) and a
+                  Microwave Absorber
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >IEEE Open J. Antennas Propag.</span
+                >
+              </li>
+              <li>
+                <h4 class="text-lg">
+                  A compact high isolation wideband MIMO antenna for multiband
+                  applications
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >Journal of Electromagnetic Waves and Applications</span
+                >
+              </li>
+              <li>
+                <h4 class="text-lg">
+                  Ultrawideband Cross-Polarization Converter Using Anisotropic
+                  Reflective Metasurface
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >Electronics</span
+                >
+              </li>
+              <li>
+                <h4 class="text-lg">
+                  Design of a Compact High Isolation 4- Element Wideband Patch
+                  Antenna Array for GNSS Applications
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >IEEE Access</span
+                >
+              </li>
+            </ol>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full">
+            <h2 class="text-2xl font-bold text-center my-4">
+              Conference Publications
+            </h2>
+            <ol style="list-style-type: disc" id="conference-list">
+              <li>
+                <h4 class="text-lg">
+                  Design of a High Isolation 60 GHz MIMO Antenna Using a
+                  Defected Ground Structure
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >Proc. 2023 IEEE Int. Symp. Antennas Propag. USNC-URSI Radio
+                  Sci. Meeting (USNC-URSI), Portland, OR, USA</span
+                >
+              </li>
+              <li>
+                <h4 class="text-lg">
+                  A Compact Inkjet-Printed Wideband Antenna for X/Ku/K/Ka-band
+                  and 5G Applications
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >Proc. 2022 IEEE Int. Symp. Antennas Propag. USNC-URSI Radio
+                  Sci. Meeting (AP-S/URSI), Denver, CO, USA</span
+                >
+              </li>
+              <li>
+                <h4 class="text-lg">
+                  A Compact Metamaterial based High Isolation MIMO Antenna for
+                  5.8 GHz WLAN Applications
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >Proc. 2022 IEEE Int. Symp. Antennas Propag. USNC-URSI Radio
+                  Sci. Meeting (AP-S/URSI), Denver, CO, USA</span
+                >
+              </li>
+              <li>
+                <h4 class="text-lg">
+                  Highly efficient broadband anisotropic metasurface for cross
+                  polarization conversion operating in the terahertz band
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >Proc. SPIE , Nanophotonics, Micro/Nano Optics, and Plasmonics
+                  VIII</span
+                >
+              </li>
+              <li>
+                <h4 class="text-lg">
+                  Design of a Compact Inkjet-Printed Wideband (4.89- 18 GHz)
+                  Antenna on a flexible PET Substrate
+                </h4>
+                <span class="text-gray-500 text-italic text-sm"
+                  >Proc. 2021 IEEE Int. Symp. Antennas Propag. USNC-URSI Radio
+                  Sci. Meeting (APS/URSI), Singapore</span
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center my-10">Contact</h1>
       </div>
     </section>
 
@@ -174,6 +348,22 @@
       //     scrollButton.style.display = "none";
       //   }
       // });
+
+      var intersectionObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0");
+            entry.target.classList.remove("h-0");
+          } else {
+            entry.target.classList.add("opacity-0");
+            entry.target.classList.add("h-0");
+          }
+        });
+      });
+      educationItems = document.querySelectorAll(".education-item");
+      educationItems.forEach((item) => {
+        intersectionObserver.observe(item);
+      });
     </script>
   </body>
 </html>
